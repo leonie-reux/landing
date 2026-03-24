@@ -1,0 +1,44 @@
+/*   CARD GRID  */
+
+/* container */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+/* individual card */
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  flex-basis: 250px;
+  flex-grow: 1;
+  margin: 10px;
+  background: #f9f9f9;
+  border-radius: 15px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1),
+              box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.card h3 {
+  flex-grow: 1;
+  padding-left: 20px;
+  color: #81A6C6;
+  font-size: 18px;
+  margin: 0;
+}
